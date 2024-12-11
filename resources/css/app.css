@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ #user-bar {
+    height: 10%;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ccc;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.status-indicator.online {
+    background-color: green;
+}
+
+.status-indicator.offline {
+    background-color: red;
+}
+
+#chat_box{
+    height: 90%vh;
+    margin: 20px;
+}
+
+#messages {
+    width: 80%vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 90%;
+
+}
+#messages li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #e6e6e6;
+    max-width: 60%;
+}
+
+#messages .my-message {
+    background: #d1ffd1;
+    align-self: flex-end;
+}
+
+#messages .received-message {
+    background: #f0f0f0;
+    align-self: flex-start;
+}
+
+.send_message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
